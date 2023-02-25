@@ -3,7 +3,6 @@ import "./Product.css";
 
 const Product = (props) => {
   const { name, img, details, time, age } = props.product;
-
   return (
     <div>
       <div
@@ -19,7 +18,12 @@ const Product = (props) => {
           <p>For Age: {age}</p>
           <p>Time Required: {time}</p>
           <div className="card-actions">
-            <button className="btn btn-primary w-full">Add to Wishlist</button>
+            <button
+              onClick={() => props.handleAddToCard(props.product)}
+              className="btn-cart btn btn-primary w-full"
+            >
+              Add to Wishlist
+            </button>
           </div>
         </div>
       </div>
