@@ -23,7 +23,8 @@ const Shop = () => {
   };
 
   return (
-    <div className="shop-container grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-1">
+    <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-1">
+      {/* *******Card Container************ */}
       <div className="lg:col-span-4 md:col-span-3">
         <div className="px-10">
           <div className="flex items-center mt-5 mb-7">
@@ -38,7 +39,7 @@ const Shop = () => {
           </div>
           <p className="text-2xl text-white"> Select Your Exercise</p>
         </div>
-        {/* ***************** */}
+        {/* ********Single card********* */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3 px-10 mt-5 mb-16 mx-auto">
           {products.map((product) => (
             <Product
@@ -49,8 +50,8 @@ const Shop = () => {
           ))}
         </div>
       </div>
-      {/* Cart Container  WishlistSummary*/}
-      <div className="cart-container">
+      {/**************  WishlistSummary*/}
+      <div className="relative">
         <WishlistSummary wishlist={wishlist}></WishlistSummary>
       </div>
     </div>

@@ -5,7 +5,7 @@
     "name": "Cycling",
     "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
     "age": "20-25",
-    "time": "900s"
+    "time": "700"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "name": "Yoga",
     "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
     "age": "20-25",
-    "time": "900s"
+    "time": "500"
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "name": "Warmup",
     "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
     "age": "20-25",
-    "time": "900s"
+    "time": "600"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "name": "Tracking",
     "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
     "age": "20-25",
-    "time": "900s"
+    "time": "400"
   },
   {
     "id": "5",
@@ -37,7 +37,7 @@
     "name": "Exploring",
     "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
     "age": "20-25",
-    "time": "900s"
+    "time": "200"
   },
   {
     "id": "6",
@@ -45,6 +45,6 @@
     "name": "Dance",
     "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
     "age": "20-25",
-    "time": "900s"
+    "time": "300"
   }
 ]

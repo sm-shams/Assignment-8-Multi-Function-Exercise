@@ -15,8 +15,8 @@ const Product = (props) => {
         <div className="card-body">
           <h2 className="card-title text-2xl text-gray-200">{name}</h2>
           <p>{details}</p>
-          <p>For Age: {age}</p>
-          <p>Time Required: {time}</p>
+          <p>For Age: {age}yr</p>
+          <p>Time Required: {time}s</p>
           <div className="card-actions">
             <button
               onClick={() => props.handleAddToCard(props.product)}

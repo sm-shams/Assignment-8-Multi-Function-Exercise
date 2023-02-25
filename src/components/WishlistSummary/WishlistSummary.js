@@ -1,10 +1,27 @@
 import React from "react";
+import "./WishlistSummary.css";
 
 const WishlistSummary = (props) => {
   const { wishlist } = props;
+  console.log(wishlist);
+  //--------- Total time calculation--------
+  let totalTime = 0;
+  for (const singleWish of wishlist) {
+    totalTime = totalTime + parseInt(singleWish.time);
+  }
+
+  // ------ Break time handler----
+
+  const breakTimeAdd = (props) => {
+    //   console.log(props);
+    const displayTime = document.getElementById("displayBreak");
+    displayTime.innerText = props;
+    // console.log(timeAdded.innerText);
+  };
+
   return (
     <div
-      className=" mt-3  lg:p-3 md:p-1 bg-slate-800 mb-72 rounded-b-lg"
+      className="md:fixed lg:fixed top-0 mt-3  lg:p-3 md:p-1 max-sm:p-2 bg-slate-800 mb-72 max-sm:mb-16 rounded-b-lg"
       style={{ height: "680px" }}
     >
       <div className="flex md:flex-col lg:flex-row items-center font-bold">
@@ -35,7 +52,7 @@ const WishlistSummary = (props) => {
           Age
         </p>
       </div>
-      {/* ****************************** */}
+      {/* *************Button group***************** */}
       <div className="mt-8">
         <h3
           className="text-2xl text-white font-b
@@ -44,17 +61,29 @@ const WishlistSummary = (props) => {
           Add A Break
         </h3>
         <div className="flex items-center justify-around mt-5 text-center bg-slate-500 text-white py-2 rounded-xl">
-          <button className="btn btn-outline btn-info btn-circle md:w-11 ">
-            10s
+          <button
+            onClick={() => breakTimeAdd(10)}
+            className="btn btn-outline btn-info btn-circle md:w-11 "
+          >
+            <span id="break1">10</span>s
           </button>
-          <button className="btn btn-outline btn-success btn-circle md:w-11">
-            20s
+          <button
+            onClick={() => breakTimeAdd(20)}
+            className="btn btn-outline btn-success btn-circle md:w-11"
+          >
+            <span id="break1">20</span>s
           </button>
-          <button className="btn btn-outline btn-warning btn-circle md:w-11">
-            30s
+          <button
+            onClick={() => breakTimeAdd(30)}
+            className="btn btn-outline btn-warning btn-circle md:w-11"
+          >
+            <span id="break1">30</span>s
           </button>
-          <button className="btn btn-outline btn-error btn-circle md:w-11">
-            40s
+          <button
+            onClick={() => breakTimeAdd(40)}
+            className="btn btn-outline btn-error btn-circle md:w-11"
+          >
+            <span id="break1">40</span>s
           </button>
         </div>
       </div>
@@ -70,13 +99,13 @@ const WishlistSummary = (props) => {
           <div className="text-xl md:text-base mt-4 bg-slate-500 text-white py-3 rounded-xl flex items-center justify-around">
             <div>Exercise Time</div>
             <div>
-              <span>00</span>s
+              <span>{totalTime}</span>s
             </div>
           </div>
           <div className="text-xl md:text-base mt-4 bg-slate-500 text-white py-3 rounded-xl flex items-center justify-around ">
             <div>Break Time</div>
             <div>
-              <span>00</span>s
+              <span id="displayBreak">0</span>s
             </div>
           </div>
         </div>
