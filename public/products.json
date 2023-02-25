@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "img": "./images/image 1.jpg",
+    "name": "Cycling",
+    "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
+    "age": "20-25",
+    "time": "900s"
+  },
+  {
+    "id": "2",
+    "img": "./images/image 2.jpg",
+    "name": "Yoga",
+    "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
+    "age": "20-25",
+    "time": "900s"
+  },
+  {
+    "id": "3",
+    "img": "./images/image 3.jpg",
+    "name": "Warmup",
+    "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
+    "age": "20-25",
+    "time": "900s"
+  },
+  {
+    "id": "4",
+    "img": "./images/image 4.jpg",
+    "name": "Tracking",
+    "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
+    "age": "20-25",
+    "time": "900s"
+  },
+  {
+    "id": "5",
+    "img": "./images/image 5.jpg",
+    "name": "Exploring",
+    "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
+    "age": "20-25",
+    "time": "900s"
+  },
+  {
+    "id": "6",
+    "img": "./images/image 6.jpg",
+    "name": "Dance",
+    "details": "Do this everyday fpr your heart and health. Otherwise your are gonna feel sick ❤",
+    "age": "20-25",
+    "time": "900s"
+  }
+]
