@@ -3,7 +3,7 @@ import "./WishlistSummary.css";
 
 const WishlistSummary = (props) => {
   const { wishlist } = props;
-  console.log(wishlist);
+  //   console.log(wishlist);
   //--------- Total time calculation--------
   let totalTime = 0;
   for (const singleWish of wishlist) {
@@ -21,8 +21,8 @@ const WishlistSummary = (props) => {
 
   return (
     <div
-      className="md:fixed lg:fixed top-0 mt-3  lg:p-3 md:p-1 max-sm:p-2 bg-slate-800 mb-72 max-sm:mb-16 rounded-b-lg"
-      style={{ height: "680px" }}
+      className="md:fixed lg:fixed top-0 mt-3  lg:p-3 md:p-1 max-sm:p-2 bg-slate-800 mb-72 max-sm:mb-16 rounded-b-lg h-auto"
+      style={{ height: "" }}
     >
       <div className="flex md:flex-col lg:flex-row items-center font-bold">
         <div className="w-2/5 ">
@@ -111,7 +111,7 @@ const WishlistSummary = (props) => {
         </div>
       </div>
       {/* ********************* */}
-      <div className="mt-10">
+      <div className="mt-5">
         <button className="btn btn-success w-full text-white text-lg md:text-sm">
           Activity Completed
         </button>
