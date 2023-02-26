@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Shop from "./components/Shop/Shop";
 import InfoQA from "./components/InfoQA/InfoQA";
