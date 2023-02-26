@@ -1,4 +1,7 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { addToDb } from "../../utilities/fakeDb";
 import "./WishlistSummary.css";
 
 const WishlistSummary = (props) => {
@@ -13,11 +16,13 @@ const WishlistSummary = (props) => {
   // ------ Break time handler----
 
   const breakTimeAdd = (props) => {
-    //   console.log(props);
+    // console.log(props);
     const displayTime = document.getElementById("displayBreak");
     displayTime.innerText = props;
     // console.log(timeAdded.innerText);
   };
+  // Toast- React
+  const notify = () => toast("You have Completed your task ❤❤");
 
   return (
     <div
@@ -62,28 +67,40 @@ const WishlistSummary = (props) => {
         </h3>
         <div className="flex items-center justify-around mt-5 text-center bg-slate-500 text-white py-2 rounded-xl">
           <button
-            onClick={() => breakTimeAdd(10)}
+            onClick={() => {
+              breakTimeAdd(10);
+              addToDb("break1");
+            }}
             className="btn btn-outline btn-info btn-circle md:w-11 "
           >
             <span id="break1">10</span>s
           </button>
           <button
-            onClick={() => breakTimeAdd(20)}
+            onClick={() => {
+              breakTimeAdd(20);
+              addToDb("break2");
+            }}
             className="btn btn-outline btn-success btn-circle md:w-11"
           >
-            <span id="break1">20</span>s
+            <span id="break2">20</span>s
           </button>
           <button
-            onClick={() => breakTimeAdd(30)}
+            onClick={() => {
+              breakTimeAdd(30);
+              addToDb("break3");
+            }}
             className="btn btn-outline btn-warning btn-circle md:w-11"
           >
-            <span id="break1">30</span>s
+            <span id="break3">30</span>s
           </button>
           <button
-            onClick={() => breakTimeAdd(40)}
+            onClick={() => {
+              breakTimeAdd(40);
+              addToDb("break4");
+            }}
             className="btn btn-outline btn-error btn-circle md:w-11"
           >
-            <span id="break1">40</span>s
+            <span id="break4">40</span>s
           </button>
         </div>
       </div>
@@ -112,9 +129,13 @@ const WishlistSummary = (props) => {
       </div>
       {/* ********************* */}
       <div className="mt-5">
-        <button className="btn btn-success w-full text-white text-lg md:text-sm">
+        <button
+          onClick={notify}
+          className="btn btn-success w-full text-white text-lg md:text-sm"
+        >
           Activity Completed
         </button>
+        <ToastContainer />
       </div>
     </div>
   );
